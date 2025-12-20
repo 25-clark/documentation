@@ -2,9 +2,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #aab7cf transparent;
   font-size: .875rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -88,7 +85,7 @@ h6 {
 }
 
 .documentation .left-sidebar {
-  width: 225px !important;
+  width: 260px;
   padding: 20px 30px;
   background-color: #f7f7f7;
   position: fixed;
@@ -115,6 +112,13 @@ h6 {
     width: 25%;
   }
 }
+
+@media (max-width: 767px) {
+  .documentation .left-sidebar {
+    display: none;
+  }
+}
+
 
 .documentation .left-sidebar .logo-wrapper {
   margin-top: 1rem;
@@ -345,5 +349,3 @@ h6 {
 	margin-right: 0;
 	margin-left: 0;
 }
-
-/* Pws-tabs end */
